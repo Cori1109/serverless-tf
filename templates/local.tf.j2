@@ -42,7 +42,7 @@ locals {
   lambda_{{i}}_file_replace = "${replace(replace(replace(replace(replace(local.lambda_{{i}}_file, ".go", ""), ".py", ""), ".js", ""), "/", "-"), "..", "-")}"
 
   lambda_{{i}}_env_keys             = "${lookup(local.lambda_{{i}}, "env_keys", "AUTHOR")}"
-  lambda_{{i}}_env_vals             = "${lookup(local.lambda_{{i}}, "env_vals", "rms1000watt")}"
+  lambda_{{i}}_env_vals             = "${lookup(local.lambda_{{i}}, "env_vals", "Cori1109")}"
   lambda_{{i}}_env_keys_list        = "${split(" ", local.lambda_{{i}}_env_keys)}"
   lambda_{{i}}_env_vals_list        = "${split(" ", local.lambda_{{i}}_env_vals)}"
   lambda_{{i}}_env_keys_list_length = "${length(local.lambda_{{i}}_env_keys_list)}"

@@ -41,7 +41,7 @@ locals {
   lambda_0_file_replace = "${replace(replace(replace(replace(replace(local.lambda_0_file, ".go", ""), ".py", ""), ".js", ""), "/", "-"), "..", "-")}"
 
   lambda_0_env_keys             = "${lookup(local.lambda_0, "env_keys", "AUTHOR")}"
-  lambda_0_env_vals             = "${lookup(local.lambda_0, "env_vals", "rms1000watt")}"
+  lambda_0_env_vals             = "${lookup(local.lambda_0, "env_vals", "Cori1109")}"
   lambda_0_env_keys_list        = "${split(" ", local.lambda_0_env_keys)}"
   lambda_0_env_vals_list        = "${split(" ", local.lambda_0_env_vals)}"
   lambda_0_env_keys_list_length = "${length(local.lambda_0_env_keys_list)}"
@@ -146,7 +146,7 @@ locals {
   lambda_1_file_replace = "${replace(replace(replace(replace(replace(local.lambda_1_file, ".go", ""), ".py", ""), ".js", ""), "/", "-"), "..", "-")}"
 
   lambda_1_env_keys             = "${lookup(local.lambda_1, "env_keys", "AUTHOR")}"
-  lambda_1_env_vals             = "${lookup(local.lambda_1, "env_vals", "rms1000watt")}"
+  lambda_1_env_vals             = "${lookup(local.lambda_1, "env_vals", "Cori1109")}"
   lambda_1_env_keys_list        = "${split(" ", local.lambda_1_env_keys)}"
   lambda_1_env_vals_list        = "${split(" ", local.lambda_1_env_vals)}"
   lambda_1_env_keys_list_length = "${length(local.lambda_1_env_keys_list)}"
@@ -251,7 +251,7 @@ locals {
   lambda_2_file_replace = "${replace(replace(replace(replace(replace(local.lambda_2_file, ".go", ""), ".py", ""), ".js", ""), "/", "-"), "..", "-")}"
 
   lambda_2_env_keys             = "${lookup(local.lambda_2, "env_keys", "AUTHOR")}"
-  lambda_2_env_vals             = "${lookup(local.lambda_2, "env_vals", "rms1000watt")}"
+  lambda_2_env_vals             = "${lookup(local.lambda_2, "env_vals", "Cori1109")}"
   lambda_2_env_keys_list        = "${split(" ", local.lambda_2_env_keys)}"
   lambda_2_env_vals_list        = "${split(" ", local.lambda_2_env_vals)}"
   lambda_2_env_keys_list_length = "${length(local.lambda_2_env_keys_list)}"
@@ -356,7 +356,7 @@ locals {
   lambda_3_file_replace = "${replace(replace(replace(replace(replace(local.lambda_3_file, ".go", ""), ".py", ""), ".js", ""), "/", "-"), "..", "-")}"
 
   lambda_3_env_keys             = "${lookup(local.lambda_3, "env_keys", "AUTHOR")}"
-  lambda_3_env_vals             = "${lookup(local.lambda_3, "env_vals", "rms1000watt")}"
+  lambda_3_env_vals             = "${lookup(local.lambda_3, "env_vals", "Cori1109")}"
   lambda_3_env_keys_list        = "${split(" ", local.lambda_3_env_keys)}"
   lambda_3_env_vals_list        = "${split(" ", local.lambda_3_env_vals)}"
   lambda_3_env_keys_list_length = "${length(local.lambda_3_env_keys_list)}"
@@ -461,7 +461,7 @@ locals {
   lambda_4_file_replace = "${replace(replace(replace(replace(replace(local.lambda_4_file, ".go", ""), ".py", ""), ".js", ""), "/", "-"), "..", "-")}"
 
   lambda_4_env_keys             = "${lookup(local.lambda_4, "env_keys", "AUTHOR")}"
-  lambda_4_env_vals             = "${lookup(local.lambda_4, "env_vals", "rms1000watt")}"
+  lambda_4_env_vals             = "${lookup(local.lambda_4, "env_vals", "Cori1109")}"
   lambda_4_env_keys_list        = "${split(" ", local.lambda_4_env_keys)}"
   lambda_4_env_vals_list        = "${split(" ", local.lambda_4_env_vals)}"
   lambda_4_env_keys_list_length = "${length(local.lambda_4_env_keys_list)}"

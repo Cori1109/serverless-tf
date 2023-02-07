@@ -31,11 +31,11 @@ Similar to the `serverless.yml` spec, functions are first class citizens. Then y
 
 ### Just a Lambda Function
 
-As seen in [Example: Hello World Go](https://github.com/rms1000watt/serverless-tf/blob/master/examples/hello-world-go/main.tf)
+As seen in [Example: Hello World Go](https://github.com/Cori1109/serverless-tf/blob/master/examples/hello-world-go/main.tf)
 
 ```hcl
 module "serverless" {
-  source = "rms1000watt/serverless-tf/aws"
+  source = "Cori1109/serverless-tf/aws"
 
   functions = [
     {
@@ -45,11 +45,11 @@ module "serverless" {
 }
 ```
 
-As seen in [Example: Hello World Py](https://github.com/rms1000watt/serverless-tf/blob/master/examples/hello-world-py/main.tf)
+As seen in [Example: Hello World Py](https://github.com/Cori1109/serverless-tf/blob/master/examples/hello-world-py/main.tf)
 
 ```hcl
 module "serverless" {
-  source = "rms1000watt/serverless-tf/aws"
+  source = "Cori1109/serverless-tf/aws"
 
   functions = [
     {
@@ -59,11 +59,11 @@ module "serverless" {
 }
 ```
 
-As seen in [Example: Hello World JS](https://github.com/rms1000watt/serverless-tf/blob/master/examples/hello-world-js/main.tf)
+As seen in [Example: Hello World JS](https://github.com/Cori1109/serverless-tf/blob/master/examples/hello-world-js/main.tf)
 
 ```hcl
 module "serverless" {
-  source = "rms1000watt/serverless-tf/aws"
+  source = "Cori1109/serverless-tf/aws"
 
   functions = [
     {
@@ -75,11 +75,11 @@ module "serverless" {
 
 ### HTTP (API Gateway)
 
-As seen in [Example: HTTP Go](https://github.com/rms1000watt/serverless-tf/blob/master/examples/http-go/main.tf)
+As seen in [Example: HTTP Go](https://github.com/Cori1109/serverless-tf/blob/master/examples/http-go/main.tf)
 
 ```hcl
 module "serverless" {
-  source = "rms1000watt/serverless-tf/aws"
+  source = "Cori1109/serverless-tf/aws"
 
   functions = [
     {
@@ -98,11 +98,11 @@ curl https://$API_DEPLOYMENT_ID.execute-api.$REGION.amazonaws.com/dev/hello-worl
 
 ### Schedule (Cloudwatch Event)
 
-As seen in [Example: Schedule Go](https://github.com/rms1000watt/serverless-tf/blob/master/examples/schedule-go/main.tf)
+As seen in [Example: Schedule Go](https://github.com/Cori1109/serverless-tf/blob/master/examples/schedule-go/main.tf)
 
 ```hcl
 module "serverless" {
-  source = "rms1000watt/serverless-tf/aws"
+  source = "Cori1109/serverless-tf/aws"
 
   functions = [
     {
@@ -115,7 +115,7 @@ module "serverless" {
 
 ### S3 Event
 
-As seen in [Example: S3 Go](https://github.com/rms1000watt/serverless-tf/blob/master/examples/s3-go/main.tf)
+As seen in [Example: S3 Go](https://github.com/Cori1109/serverless-tf/blob/master/examples/s3-go/main.tf)
 
 ```hcl
 module "serverless" {
@@ -132,7 +132,7 @@ module "serverless" {
 
 ### Different Regions
 
-As seen in [Example: Regions Go](https://github.com/rms1000watt/serverless-tf/blob/master/examples/regions-go/main.tf)
+As seen in [Example: Regions Go](https://github.com/Cori1109/serverless-tf/blob/master/examples/regions-go/main.tf)
 
 ```hcl
 provider "aws" {
@@ -163,7 +163,7 @@ module "serverless" {
 
 ```hcl
 module "serverless" {
-  source = "rms1000watt/serverless-tf/aws"
+  source = "Cori1109/serverless-tf/aws"
 
   functions = [
     {
@@ -188,11 +188,11 @@ module "serverless" {
 
 ### Override Lambda Role/Policy
 
-See [Example: HTTP S3 Go](https://github.com/rms1000watt/serverless-tf/blob/master/examples/http-s3-go/main.tf) for an example to override Lambda Role/Policy allowing it to connect to an S3 bucket.
+See [Example: HTTP S3 Go](https://github.com/Cori1109/serverless-tf/blob/master/examples/http-s3-go/main.tf) for an example to override Lambda Role/Policy allowing it to connect to an S3 bucket.
 
 ### HTTP with Authorizer
 
-As seen in [Example: HTTP Authorizer Go](https://github.com/rms1000watt/serverless-tf/blob/master/examples/http-authorizer-go/main.tf)
+As seen in [Example: HTTP Authorizer Go](https://github.com/Cori1109/serverless-tf/blob/master/examples/http-authorizer-go/main.tf)
 
 ```hcl
 module "serverless" {
@@ -216,7 +216,7 @@ module "serverless" {
 
 ### HTTP with Authorizer with Custom Policy
 
-As seen in [Example: HTTP Authorizer S3 Go](https://github.com/rms1000watt/serverless-tf/blob/master/examples/http-authorizer-s3-go/main.tf) to override authorizer with a custom policy.
+As seen in [Example: HTTP Authorizer S3 Go](https://github.com/Cori1109/serverless-tf/blob/master/examples/http-authorizer-s3-go/main.tf) to override authorizer with a custom policy.
 
 ## Options
 
@@ -224,7 +224,7 @@ Here are the options that each function supports.
 
 ```hcl
 module "serverless" {
-  source = "rms1000watt/serverless-tf/aws"
+  source = "Cori1109/serverless-tf/aws"
 
   service     = "" // optional (default: folder name)
   stage       = "" // optional (default: dev)
